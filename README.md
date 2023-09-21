@@ -1,10 +1,13 @@
 # Membuat Project TypeScript
 
-- Buat Folder belajar-typescript-oop
+-   Buat Folder belajar-typescript-oop
+
 ```bash
 mkdir belajar-typescript-oop
 ```
-- Isi package.json
+
+-   Isi package.json
+
 ```bash
 {
  package name: (oop_typesscript) belajar-typescript-oop
@@ -33,12 +36,14 @@ Is this OK? (yes)
 }
 ```
 
-- Buat Node Module
+-   Buat Node Module
+
 ```bash
 npm init
 ```
 
-- Buka package.json dan tambah type module
+-   Buka package.json dan tambah type module
+
 ```
 {
   "license": "ISC",
@@ -47,22 +52,26 @@ npm init
 
 ```
 
-- Menambahkan Library Jest Unit Test
+-   Menambahkan Library Jest Unit Test
+
 ```bash
 npm install --save-dev jest @types/jest
 ```
 
-- Menambah Library Babel
+-   Menambah Library Babel
+
 ```bash
 npm install --save-dev babel-jest @babel/preset-env
 ```
 
-- Setup Babel
+-   Setup Babel
+
 ```bash
 https://babeljs.io/setup#installation
 ```
 
-- Tambahkan scripts package.json Jest
+-   Tambahkan scripts package.json Jest
+
 ```bash
   "scripts": {
     "test": "jest"
@@ -73,12 +82,15 @@ https://babeljs.io/setup#installation
     }
   },
 ```
-- Create file babel.config.json
+
+-   Create file babel.config.json
+
 ```bash
 touch babel.config.json
 ```
 
-- Tambahkan Presets di babel.config.json
+-   Tambahkan Presets di babel.config.json
+
 ```bash
 {
   "presets": [
@@ -87,50 +99,62 @@ touch babel.config.json
 }
 ```
 
-- Setup Typescript
+-   Setup Typescript
+
 ```bash
 npm install --save-dev typescript
 ```
 
-- Setup Typescript Project
+-   Setup Typescript Project
+
 ```bash
 npx tsc --init
 ```
 
-- Ubah tsconfig.json 
+-   Ubah tsconfig.json
+
 ```bash
 Ubah "module" dari "commonjs" menjadi "ES6"
 ```
 
-- Setup Jest agar support Typescript [https://jestjs.io/docs/getting-started#using-typescript]
+-   Setup Jest agar support Typescript [https://jestjs.io/docs/getting-started#using-typescript]
+
 ```bash
 npm install --save-dev @babel/preset-typescript
 ```
 
-- Tambahkan babel.config.json
+-   Tambahkan babel.config.json
+
 ```bash
 "@babel/preset-typescript"
 ```
 
-- Install ts-jest
+-   Install ts-jest
+
 ```bash
 npm install --save-dev ts-jest
 ```
 
-- Install Jest Global
+-   Install Jest Global
+
 ```bash
 npm install --save-dev @jest/globals
 ```
 
-- Buat folder unit test
+-   Buat folder unit test
+
 ```bash
 mkdir test
 ```
-- Buat file class
+
+-   Buat file class
+
 ```bash
 touch test/test.ts
 ```
-- Buat Class
+
+-   Buat Class
+
 ```bash
 describe ('Class', () => {
     it('should can create class', () => {
@@ -140,9 +164,9 @@ describe ('Class', () => {
         }
         # code class order
         class Order {
-        
+
         }
-        # insialisasi class 
+        # insialisasi class
         const customer:Customer = new Customer();
         const order = new Order();
 
@@ -150,7 +174,8 @@ describe ('Class', () => {
 });
 ```
 
-- Jalankan test di terminal
+-   Jalankan test di terminal
+
 ```bash
 npx jest
 ```

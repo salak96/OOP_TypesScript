@@ -1,4 +1,4 @@
-describe ('Class', () => {
+describe('Class', () => {
     class Customer {
         //constructor seperti function
         constructor() {
@@ -6,18 +6,14 @@ describe ('Class', () => {
         }
     }
 
-    class Order {
-    
-    }
+    class Order {}
     it('should can create class', () => {
-    
-        const customer:Customer = new Customer();
+        const customer: Customer = new Customer();
         const order = new Order();
-
     });
     it('should can create class', () => {
         // Untuk memanggil object class
         new Customer();
         new Customer();
-    })
+    });
 });
