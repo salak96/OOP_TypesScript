@@ -43,6 +43,83 @@ npm init
 - Buka package.json dan tambah type module
 ```
 {
-    "type": "module"
+  "license": "ISC",
+  "type": "module"
 }
+
+```
+
+- Menambahkan Library Jest Unit Test
+```bash
+npm install --save-dev jest @types/jest
+```
+
+- Menambah Library Babel
+```bash
+npm install --save-dev babel-jest @babel/preset-env
+```
+
+- Setup Babel
+```bash
+https://babeljs.io/setup#installation
+```
+
+- Tambahkan scripts package.json Jest
+```bash
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+```
+- Create file babel.config.json
+```bash
+touch babel.config.json
+```
+
+- Tambahkan Presets di babel.config.json
+```bash
+{
+  "presets": [
+    "@babel/preset-env"
+  ]
+}
+```
+
+- Setup Typescript
+```bash
+npm install --save-dev typescript
+```
+
+- Setup Typescript Project
+```bash
+npx tsc --init
+```
+
+- Ubah tsconfig.json 
+```bash
+Ubah "module" dari "commonjs" menjadi "ES6"
+```
+
+- Setup Jest agar support Typescript [https://jestjs.io/docs/getting-started#using-typescript]
+```bash
+npm install --save-dev @babel/preset-typescript
+```
+
+- Tambahkan babel.config.json
+```bash
+"@babel/preset-typescript"
+```
+
+- Install ts-jest
+```bash
+npm install --save-dev ts-jest
+```
+
+- Install Jest Global
+```bash
+npm install --save-dev @jest/globals
 ```
