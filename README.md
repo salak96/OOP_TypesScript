@@ -16,8 +16,6 @@ git repository:
 keywords:
 author: Sasangka lambang kurniawan
 license: (ISC)
-About to write to F:\FULLSTACK\Ts PZN\OOP_TypesScript\package.json:
-
 {
   "name": "belajar-typescript-oop",
   "version": "1.0.0",
