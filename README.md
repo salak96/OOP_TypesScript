@@ -121,3 +121,36 @@ npm install --save-dev ts-jest
 ```bash
 npm install --save-dev @jest/globals
 ```
+
+- Buat folder unit test
+```bash
+mkdir test
+```
+- Buat file class
+```bash
+touch test/test.ts
+```
+- Buat Class
+```bash
+describe ('Class', () => {
+    it('should can create class', () => {
+        # code class customer
+        class Customer {
+
+        }
+        # code class order
+        class Order {
+        
+        }
+        # insialisasi class 
+        const customer:Customer = new Customer();
+        const order = new Order();
+
+    });
+});
+```
+
+- Jalankan test di terminal
+```bash
+npx jest
+```
