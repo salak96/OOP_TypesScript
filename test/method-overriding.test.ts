@@ -20,7 +20,10 @@ describe('Method Overriding', () => {
         // Ini adalah metode sayHello dalam kelas Manager.
         // Metode ini juga menerima parameter "name" dan mencetak pesan yang berbeda ke konsol.
         sayHello(name: string): void {
-            console.info(`Hello ${name}, my name ${this.name}, I am your manager`);
+            // console.info(`Hello ${name}, my name ${this.name}, I am your manager`);
+            // super class memanggil name dari Employee
+            super.sayHello(name)
+            console.info(`And, I am your manager`)
         }
     }
 
