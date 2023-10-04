@@ -14,7 +14,7 @@ describe('Visilibilty', () => {
     }
 
     // DoubleCounter adalah subkelas dari Counter yang mengganti perilaku increment
-    class DoubleCounter extends Counter{
+    class DoubleCounter extends Counter {
         public increment(): void {
             this.counter += 2;
         }
