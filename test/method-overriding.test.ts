@@ -22,8 +22,8 @@ describe('Method Overriding', () => {
         sayHello(name: string): void {
             // console.info(`Hello ${name}, my name ${this.name}, I am your manager`);
             // super class memanggil name dari Employee
-            super.sayHello(name)
-            console.info(`And, I am your manager`)
+            super.sayHello(name);
+            console.info(`And, I am your manager`);
         }
     }
 
