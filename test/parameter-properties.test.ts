@@ -1,9 +1,7 @@
 describe('Parameter Properties', () => {
     // Ini adalah kelas Person dengan constructor yang memiliki parameter properties "name"
     class Person {
-        constructor(public name: string) {
-            
-        }
+        constructor(public name: string) {}
     }
 
     // Ini adalah pengujian untuk memastikan parameter properties bekerja dengan baik
